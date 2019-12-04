@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 @section('content')
-<div class="container">
+<div class="container" style="padding:20px; margin-bottom:30px;">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

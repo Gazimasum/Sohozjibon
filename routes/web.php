@@ -17,6 +17,7 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about_us', 'HomeController@about_us')->name('about_us');
 Route::get('/show/{id}', 'HomeController@show')->name('show');
 Route::get('/issuedbook', 'Frontend\PagesController@issuedbook')->name('issuedbook');
 

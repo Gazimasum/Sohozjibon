@@ -32,4 +32,9 @@ class HomeController extends Controller
         return view('frontend.pages.show',compact('category'));
 
     }
+
+    public function about_us()
+    {
+      return view('frontend.Pages.about_us');
+    }
 }
