@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2019 at 07:54 PM
+-- Generation Time: Dec 05, 2019 at 05:45 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.2.23
 
@@ -64,7 +64,8 @@ CREATE TABLE `authors` (
 --
 
 INSERT INTO `authors` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(2, 'Balaguru Shami', '2019-11-25 14:15:47', '2019-11-25 14:15:47');
+(2, 'Balaguru Shami', '2019-11-25 14:15:47', '2019-11-25 14:15:47'),
+(3, 'James Patterson', '2019-12-02 08:49:35', '2019-12-02 08:49:35');
 
 -- --------------------------------------------------------
 
@@ -89,7 +90,8 @@ CREATE TABLE `books` (
 --
 
 INSERT INTO `books` (`id`, `name`, `category_id`, `author_id`, `isbnn_number`, `status`, `image`, `created_at`, `updated_at`) VALUES
-(5, 'ANSI', 3, 2, 1111, 1, '1574741410.jpg', '2019-11-25 22:10:10', '2019-11-25 22:21:10');
+(5, 'ANSI', 3, 2, 1111, 1, '1574741410.jpg', '2019-11-25 22:10:10', '2019-11-25 22:21:10'),
+(6, 'Java', 3, 3, 2222, 0, '1575298209.jpg', '2019-12-02 08:50:10', '2019-12-02 11:09:17');
 
 -- --------------------------------------------------------
 
@@ -110,7 +112,7 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'Science', 1, '2019-11-25 13:17:46', '2019-11-25 13:49:56'),
+(1, 'Science', 1, '2019-11-25 13:17:46', '2019-12-04 22:41:48'),
 (3, 'Programming', 1, '2019-11-25 14:15:30', '2019-11-25 14:15:30');
 
 -- --------------------------------------------------------
@@ -284,13 +286,13 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `authors`
 --
 ALTER TABLE `authors`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `categories`
